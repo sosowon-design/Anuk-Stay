@@ -1,0 +1,6 @@
+{
+  "name": "아눅 남해",
+  "description": "우리를 잇는 남해의 감성 프라이빗 스테이, 아눅(ANUK)",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
