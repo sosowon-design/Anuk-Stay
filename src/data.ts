@@ -4,6 +4,7 @@
  */
 
 import { Room } from './types';
+import { getImageUrl } from './assets/images';
 
 export const PENSION_INFO = {
   name: "아눅 스테이",
@@ -19,13 +20,13 @@ export const STORY_SECTIONS = [
     title: "Le Temps (시간)",
     subtitle: "시간이 흘러 비로소 완성되는 것들",
     description: "남해의 잔잔한 파도 소리를 배경 삼아, 바쁘게 흘러가던 도심의 속도를 잠시 잊어봅니다. 하루의 낮과 밤이 교차하는 아름다운 노을을 가만히 바라보며, 나만의 온전한 시간과 마주합니다.",
-    image: "/src/assets/images/cequi_pool_villa_4_1783442647864.jpg"
+    image: getImageUrl("cequi_pool_villa_4_1783442647864.jpg")
   },
   {
     title: "La Relation (관계)",
     subtitle: "우리를 잇는 따스한 대화와 연결",
     description: "영화 속 장, 줄리에트, 제레미 삼남매가 부르고뉴의 포도밭에서 와인을 빚으며 갈등을 치유하고 하나가 되었듯, 사랑하는 가족, 연인, 혹은 소중한 나 자신과의 끈끈한 유대를 확인하는 공간입니다.",
-    image: "/src/assets/images/cequi_pool_villa_2_1783442617946.jpg"
+    image: getImageUrl("cequi_pool_villa_2_1783442617946.jpg")
   }
 ];
 
@@ -64,18 +65,18 @@ export const ROOMS_DATA: Room[] = [
         items: ["이솝(Aesop) 핸드워시/바디워시/샴푸/컨디셔너", "다이슨 에어랩 드라이어", "친환경 대나무 칫솔 세트", "가운 & 타월", "반신욕 소금"]
       }
     ],
-    mainImage: "/src/assets/images/cequi_pool_villa_1_1783442590314.jpg",
+    mainImage: getImageUrl("cequi_pool_villa_1_1783442590314.jpg"),
     galleryImages: [
-      "/src/assets/images/cequi_pool_villa_1_1783442590314.jpg",
-      "/src/assets/images/cequi_pool_villa_3_1783442630167.jpg",
-      "/src/assets/images/cequi_pool_villa_4_1783442647864.jpg",
-      "/src/assets/images/cequi_pool_villa_2_1783442617946.jpg"
+      getImageUrl("cequi_pool_villa_1_1783442590314.jpg"),
+      getImageUrl("cequi_pool_villa_3_1783442630167.jpg"),
+      getImageUrl("cequi_pool_villa_4_1783442647864.jpg"),
+      getImageUrl("cequi_pool_villa_2_1783442617946.jpg")
     ],
     musicTheme: {
       title: "Clair de Lune (달빛)",
       artist: "Claude Debussy",
       audioUrl: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
-      cover: "/src/assets/images/cequi_pool_villa_5_1783442661152.jpg"
+      cover: getImageUrl("cequi_pool_villa_5_1783442661152.jpg")
     }
   },
   {
@@ -112,18 +113,18 @@ export const ROOMS_DATA: Room[] = [
         items: ["히노끼 전용 천연 바스 솔트", "이솝 아로마틱 어메니티 패키지", "코튼 이중 거즈 가운", "다이슨 헤어드라이어", "우드 풋 바스"]
       }
     ],
-    mainImage: "/src/assets/images/anuk_heureum_main_1783706680494.jpg",
+    mainImage: getImageUrl("anuk_heureum_main_1783706680494.jpg"),
     galleryImages: [
-      "/src/assets/images/anuk_heureum_main_1783706680494.jpg",
-      "/src/assets/images/cequi_pool_villa_5_1783442661152.jpg",
-      "/src/assets/images/cequi_pool_villa_4_1783442647864.jpg",
-      "/src/assets/images/cequi_pool_villa_3_1783442630167.jpg"
+      getImageUrl("anuk_heureum_main_1783706680494.jpg"),
+      getImageUrl("cequi_pool_villa_5_1783442661152.jpg"),
+      getImageUrl("cequi_pool_villa_4_1783442647864.jpg"),
+      getImageUrl("cequi_pool_villa_3_1783442630167.jpg")
     ],
     musicTheme: {
       title: "Gymnopédie No.1",
       artist: "Erik Satie",
       audioUrl: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3",
-      cover: "/src/assets/images/cequi_pool_villa_5_1783442661152.jpg"
+      cover: getImageUrl("cequi_pool_villa_5_1783442661152.jpg")
     }
   },
   {
@@ -160,18 +161,18 @@ export const ROOMS_DATA: Room[] = [
         items: ["이솝 욕실 어메니티 오가닉 라인", "프로 테라피 헤어드라이어", "아로마 샤워 스티머 타월 세트", "소형 월풀 스파"]
       }
     ],
-    mainImage: "/src/assets/images/anuk_yeobaek_main_1783706695225.jpg",
+    mainImage: getImageUrl("anuk_yeobaek_main_1783706695225.jpg"),
     galleryImages: [
-      "/src/assets/images/anuk_yeobaek_main_1783706695225.jpg",
-      "/src/assets/images/anuk_hero_sunset_villa_1786457631691.jpg",
-      "/src/assets/images/cequi_pool_villa_3_1783442630167.jpg",
-      "/src/assets/images/cequi_pool_villa_2_1783442617946.jpg"
+      getImageUrl("anuk_yeobaek_main_1783706695225.jpg"),
+      getImageUrl("anuk_hero_sunset_villa_1786457631691.jpg"),
+      getImageUrl("cequi_pool_villa_3_1783442630167.jpg"),
+      getImageUrl("cequi_pool_villa_2_1783442617946.jpg")
     ],
     musicTheme: {
       title: "Je te veux (당신을 원해요)",
       artist: "Erik Satie",
       audioUrl: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3",
-      cover: "/src/assets/images/cequi_pool_villa_5_1783442661152.jpg"
+      cover: getImageUrl("cequi_pool_villa_5_1783442661152.jpg")
     }
   }
 ];
@@ -182,37 +183,37 @@ export const SPECIAL_EXPERIENCES = [
     title: "사계절 온수 인피니티 풀빌라",
     subtitle: "32℃~34℃ 프라이빗 온수 풀",
     description: "32℃~34℃ 사계절 최적 온도가 유지되는 프라이빗 풀에서 남해의 붉은 노을과 석양을 감상할 수 있습니다.",
-    image: "/src/assets/images/anuk_exp_pool_1786458966739.jpg"
+    image: getImageUrl("anuk_exp_pool_1786458966739.jpg")
   },
   {
     id: "breakfast",
     title: "아눅 시그니처 피크닉 조식",
     subtitle: "매일 아침 8시 30분 무료 전달",
     description: "갓 구운 수제 빵과 신선한 계절 과일, 핸드드립 커피가 담긴 오가닉 바구니를 매일 아침 문 앞까지 무료로 배송해 드립니다.",
-    image: "/src/assets/images/anuk_organic_breakfast_new_1786647691176.jpg"
+    image: getImageUrl("anuk_organic_breakfast_new_1786647691176.jpg")
   },
   {
     id: "spa",
     title: "천연 편백나무 야외 히노끼 스파",
     subtitle: "피톤치드 가득한 정원 노천탕",
     description: "은은한 편백나무 향과 따뜻한 노천탕에서 파도 소리를 들으며 여행의 피로를 깊게 풀 수 있습니다.",
-    image: "/src/assets/images/cequi_pool_villa_5_1783442661152.jpg"
+    image: getImageUrl("cequi_pool_villa_5_1783442661152.jpg")
   },
   {
     id: "wine",
     title: "프랑스 부르고뉴 와인 큐레이션",
     subtitle: "오션뷰 테라스 전용 와인 세팅",
     description: "아눅 스테이가 엄선한 프랑스 부르고뉴 피노 누아 와인과 고급 글라스로 테라스의 낭만을 즐기실 수 있습니다.",
-    image: "/src/assets/images/anuk_filmic_wine_1786379703140.jpg"
+    image: getImageUrl("anuk_filmic_wine_1786379703140.jpg")
   }
 ];
 
 export const GALLERY_PHOTOS = [
-  { url: "/src/assets/images/cequi_pool_villa_1_1783442590314.jpg", caption: "남해 하늘과 풀빌라의 전경" },
-  { url: "/src/assets/images/cequi_pool_villa_2_1783442617946.jpg", caption: "고요(Goyo) 객실의 미니멀 거실" },
-  { url: "/src/assets/images/cequi_pool_villa_3_1783442630167.jpg", caption: "흐름(Heureum) 객실의 정원뷰 히노끼" },
-  { url: "/src/assets/images/cequi_pool_villa_4_1783442647864.jpg", caption: "여백(Yeobaek) 객실의 따뜻한 아침" },
-  { url: "/src/assets/images/cequi_pool_villa_5_1783442661152.jpg", caption: "남해 바다 노을을 닮은 피노누아" }
+  { url: getImageUrl("cequi_pool_villa_1_1783442590314.jpg"), caption: "남해 하늘과 풀빌라의 전경" },
+  { url: getImageUrl("cequi_pool_villa_2_1783442617946.jpg"), caption: "고요(Goyo) 객실의 미니멀 거실" },
+  { url: getImageUrl("cequi_pool_villa_3_1783442630167.jpg"), caption: "흐름(Heureum) 객실의 정원뷰 히노끼" },
+  { url: getImageUrl("cequi_pool_villa_4_1783442647864.jpg"), caption: "여백(Yeobaek) 객실의 따뜻한 아침" },
+  { url: getImageUrl("cequi_pool_villa_5_1783442661152.jpg"), caption: "남해 바다 노을을 닮은 피노누아" }
 ];
 
 export const WINE_QUESTIONS = [

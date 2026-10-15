@@ -12,6 +12,8 @@ interface StoryProps {
   onNavigateToRooms?: () => void;
 }
 
+import { getImageUrl } from '../assets/images';
+
 export default function Story({ onNavigateToRooms }: StoryProps) {
   const storyPillars = [
     {
@@ -19,21 +21,21 @@ export default function Story({ onNavigateToRooms }: StoryProps) {
       title: "FILMIC VIBES",
       subtitle: "와인과 함께 즐기는 영화",
       desc: "붉게 물드는 남해의 낙조를 배경으로 깊은 풍미의 와인과 대형 스크린 영화, 잔잔한 파도 소리가 함께 어우러져 잊지 못할 낭만적인 밤을 만끽할 수 있습니다.",
-      image: "/src/assets/images/anuk_filmic_wine_1786379703140.jpg"
+      image: getImageUrl("anuk_filmic_wine_1786379703140.jpg")
     },
     {
       num: "02",
       title: "OCEAN & TERRACE",
       subtitle: "바다 바람과 테라스 힐링",
       desc: "탁 트인 프라이빗 테라스에서 시원하게 불어오는 해풍과 드넓은 수평선을 마주하며, 일상의 번잡함을 내려놓고 온전한 평온과 여유를 즐길 수 있습니다.",
-      image: "/src/assets/images/anuk_terrace_ocean_1786703028591.jpg"
+      image: getImageUrl("anuk_terrace_ocean_1786703028591.jpg")
     },
     {
       num: "03",
       title: "HINOKI & HEALING",
       subtitle: "편백나무 향과 따스한 노천스파",
       desc: "은은한 편백 피톤치드 향이 감도는 따스한 야외 노천스파에서 쏟아지는 밤하늘의 별빛과 파도 소리를 벗 삼아 지친 몸과 마음에 깊은 쉼을 선물합니다.",
-      image: "/src/assets/images/anuk_hinoki_spa_1786703040764.jpg"
+      image: getImageUrl("anuk_hinoki_spa_1786703040764.jpg")
     }
   ];
 
@@ -149,7 +151,7 @@ export default function Story({ onNavigateToRooms }: StoryProps) {
             {/* Left Main Hero Image Card without text overlay */}
             <div className="lg:col-span-5 relative rounded-2xl overflow-hidden min-h-[220px] sm:min-h-[260px] lg:min-h-[320px] shadow-sm group border-2 border-[#E5DFD5] bg-stone-100">
               <OptimizedImage 
-                src="/src/assets/images/cequi_pool_villa_2_1783442617946.jpg" 
+                src={getImageUrl("cequi_pool_villa_2_1783442617946.jpg")} 
                 alt="아눅 스테이 철학과 하이라이트" 
                 priority={true}
                 className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out absolute inset-0"
@@ -312,7 +314,7 @@ export default function Story({ onNavigateToRooms }: StoryProps) {
             className="relative w-full aspect-[16/10] sm:aspect-[16/9] md:aspect-[21/9] rounded-2xl overflow-hidden group shadow-sm bg-stone-100"
           >
             <OptimizedImage 
-              src="/src/assets/images/cequi_pool_villa_1_1783442590314.jpg" 
+              src={getImageUrl("cequi_pool_villa_1_1783442590314.jpg")} 
               alt="아눅 스테이 실외 건축 전경" 
               className="w-full h-full object-cover object-center group-hover:scale-103 transition-transform duration-700 ease-out"
               containerClassName="w-full h-full"

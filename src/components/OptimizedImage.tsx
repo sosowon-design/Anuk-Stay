@@ -5,6 +5,7 @@
 
 import React, { useState, useEffect, useRef } from 'react';
 import { motion } from 'motion/react';
+import { getImageUrl } from '../assets/images';
 
 interface OptimizedImageProps extends React.ImgHTMLAttributes<HTMLImageElement> {
   src: string;
@@ -26,11 +27,12 @@ export default function OptimizedImage({
   motionDuration = 10,
   ...props
 }: OptimizedImageProps) {
+  const resolvedSrc = getImageUrl(src);
   const [isLoaded, setIsLoaded] = useState<boolean>(() => {
     // If running in browser and image already cached, mark loaded right away
     if (typeof window !== 'undefined') {
       const img = new Image();
-      img.src = src;
+      img.src = resolvedSrc;
       return img.complete && img.naturalWidth > 0;
     }
     return false;
@@ -43,7 +45,7 @@ export default function OptimizedImage({
     if (imgRef.current && imgRef.current.complete && imgRef.current.naturalWidth > 0) {
       setIsLoaded(true);
     }
-  }, [src]);
+  }, [resolvedSrc]);
 
   return (
     <div className={`relative overflow-hidden w-full h-full ${containerClassName}`}>
@@ -56,7 +58,7 @@ export default function OptimizedImage({
       )}
       <motion.img
         ref={imgRef}
-        src={src}
+        src={resolvedSrc}
         alt={alt}
         loading={priority ? 'eager' : 'lazy'}
         decoding="async"

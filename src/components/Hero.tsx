@@ -7,16 +7,18 @@ import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { ChevronLeft, ChevronRight, ArrowRight, PhoneCall, MessageCircle, Instagram, Globe, Calendar } from 'lucide-react';
 
+import { getImageUrl } from '../assets/images';
+
 interface HeroProps {
   onExploreClick: (view: string) => void;
 }
 
 const HERO_IMAGES = [
-  { url: "/src/assets/images/cequi_pool_villa_1_1783442590314.jpg" },
-  { url: "/src/assets/images/cequi_pool_villa_2_1783442617946.jpg" },
-  { url: "/src/assets/images/cequi_pool_villa_3_1783442630167.jpg" },
-  { url: "/src/assets/images/anuk_bedroom_hero_1783706667607.jpg" },
-  { url: "/src/assets/images/anuk_hero_sunset_villa_1786457631691.jpg" }
+  { url: getImageUrl("cequi_pool_villa_1_1783442590314.jpg") },
+  { url: getImageUrl("cequi_pool_villa_2_1783442617946.jpg") },
+  { url: getImageUrl("cequi_pool_villa_3_1783442630167.jpg") },
+  { url: getImageUrl("anuk_bedroom_hero_1783706667607.jpg") },
+  { url: getImageUrl("anuk_hero_sunset_villa_1786457631691.jpg") }
 ];
 
 export default function Hero({ onExploreClick }: HeroProps) {
